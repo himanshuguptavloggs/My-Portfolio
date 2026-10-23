@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111a17">
+    <meta name="description" content="Himanshu Gupta Vlogger — travel diaries, lifestyle vlogs, and real moments from everyday adventures. Come along for the journey.">
+    <meta name="author" content="Himanshu Gupta">
+    <meta property="og:title" content="Himanshu Gupta Vlogger">
+    <meta property="og:description" content="Travel diaries, lifestyle vlogs, and real moments from everyday adventures.">
+    <meta property="og:type" content="website">
+    <title>Himanshu Gupta Vlogger | Travel & Lifestyle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Himanshu Gupta Vlogger home">HIMANSHU <span>GUPTA</span><i>.</i></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#youtube">YouTube</a>
+        <a href="#films">Films</a>
+        <a href="#about">My story</a>
+        <a href="#journal">Journal</a>
+        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/himanshu-gupta-background.png" alt="Himanshu Gupta, vlogger, against a blue and amber studio background">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> HIMANSHU GUPTA <span class="hero-role">VLOGGER · TRAVEL · LIFESTYLE</span></p>
+          <h1 id="hero-title">Himanshu<br><em>Gupta.</em></h1>
+          <p class="hero-intro">Travel diaries, everyday stories, and the little moments worth remembering. Come along for the journey.</p>
+          <div class="hero-actions">
+            <button class="button button-light js-play" type="button" data-video="ScMzIvxBSi4" data-title="Somewhere, a little further">Play the latest film <span aria-hidden="true">▶</span></button>
+            <a class="text-link text-link-light" href="#films">Explore the films <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-caption"><span>HIMANSHU GUPTA · VLOGGER</span><span>Real life. Good stories. Always exploring.</span></div>
+        <div class="hero-note" aria-hidden="true"><span>VLOGGER<br>ON THE MOVE</span><span class="note-star">✳</span></div>
+      </section>
+
+      <section class="intro section-wrap" aria-label="Introduction">
+        <p class="eyebrow">A camera, a carry-on & no real plan</p>
+        <p class="intro-copy">Hey, I’m Himanshu. I share <em>travel, everyday life, and the stories behind them</em>—the places, people, and little moments that make every journey memorable.</p>
+        <div class="intro-extras">
+          <button class="detour-button" type="button">Pick a story for me <span aria-hidden="true">✳</span></button>
+          <p class="detour-message" aria-live="polite"></p>
+        </div>
+        <a class="round-link" href="#about" aria-label="Read my story">↘</a>
+      </section>
+
+      <div class="travel-ticker" aria-label="Good light, long way round, little moments, big skies">
+        <div class="travel-ticker-track" aria-hidden="true">
+          <span>GOOD LIGHT</span><i>✳</i><span>LONG WAY ROUND</span><i>✳</i><span>LITTLE MOMENTS</span><i>✳</i><span>BIG SKIES</span><i>✳</i>
+          <span>GOOD LIGHT</span><i>✳</i><span>LONG WAY ROUND</span><i>✳</i><span>LITTLE MOMENTS</span><i>✳</i><span>BIG SKIES</span><i>✳</i>
+        </div>
+      </div>
+
+      <section class="youtube section-wrap" id="youtube" aria-labelledby="youtube-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Latest from the channel</p>
+            <h2 id="youtube-title">Fresh from the <em>feed.</em></h2>
+          </div>
+          <div class="youtube-heading-actions">
+            <p class="youtube-refresh-status" aria-live="polite">Updating every minute</p>
+            <a class="text-link" href="https://www.youtube.com/@himanshuguptavloggs" target="_blank" rel="noreferrer">Watch more on YouTube <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div id="youtube-videos" class="youtube-grid" aria-live="polite" aria-busy="true">
+          <p class="youtube-empty" role="status">Loading the latest videos…</p>
+        </div>
+      </section>
+
+      <section class="films section-wrap" id="films" aria-labelledby="films-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Postcards in motion</p>
+            <h2 id="films-title">Out in the <em>world.</em></h2>
+          </div>
+          <a class="text-link" href="#contact">Have a story in mind? <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="filters" role="group" aria-label="Filter films by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All films <span>06</span></button>
+          <button class="filter-button" type="button" data-filter="travel" aria-pressed="false">Travel</button>
+          <button class="filter-button" type="button" data-filter="slow-living" aria-pressed="false">Slow living</button>
+          <button class="filter-button" type="button" data-filter="field-notes" aria-pressed="false">Field notes</button>
+        </div>
+        <div class="film-grid">
+          <article class="film-card film-card-featured" data-category="travel">
+            <button class="film-thumb js-play" type="button" data-video="ScMzIvxBSi4" data-title="The long way to the Dolomites" aria-label="Play The long way to the Dolomites">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Snow-capped mountain beneath a starry sky" loading="lazy">
+              <span class="play-button" aria-hidden="true">▶</span><span class="film-duration">08:24</span>
+            </button>
+            <div class="film-meta"><span>TRAVEL · ITALY</span><span>JUL ’24</span></div>
+            <h3>The long way to the Dolomites</h3>
+            <p>Three days, one tiny car, and absolutely no shortcuts.</p>
+          </article>
+          <article class="film-card" data-category="slow-living">
+            <button class="film-thumb js-play" type="button" data-video="ScMzIvxBSi4" data-title="A slower kind of Sunday" aria-label="Play A slower kind of Sunday">
+              <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80" alt="Warm morning light falling across a quiet cafe" loading="lazy">
+              <span class="play-button" aria-hidden="true">▶</span><span class="film-duration">05:16</span>
+            </button>
+            <div class="film-meta"><span>SLOW LIVING · HOME</span><span>JUN ’24</span></div>
+            <h3>A slower kind of Sunday</h3>
+            <p>Learning to leave a little space in the day.</p>
+          </article>
+          <article class="film-card" data-category="travel">
+            <button class="film-thumb js-play" type="button" data-video="ScMzIvxBSi4" data-title="Somewhere between tides" aria-label="Play Somewhere between tides">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=80" alt="Ocean waves rolling into a sunny coastline" loading="lazy">
+              <span class="play-button" aria-hidden="true">▶</span><span class="film-duration">06:08</span>
+            </button>
+            <div class="film-meta"><span>TRAVEL · PORTUGAL</span><span>MAY ’24</span></div>
+            <h3>Somewhere between tides</h3>
+            <p>A few days on the coast with nothing on the calendar.</p>
+          </article>
+          <article class="film-card" data-category="field-notes">
+            <button class="film-thumb js-play" type="button" data-video="ScMzIvxBSi4" data-title="What's in my camera bag?" aria-label="Play What's in my camera bag?">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80" alt="Camera and photography gear laid out on a table" loading="lazy">
+              <span class="play-button" aria-hidden="true">▶</span><span class="film-duration">11:32</span>
+            </button>
+            <div class="film-meta"><span>FIELD NOTES · GEAR</span><span>APR ’24</span></div>
+            <h3>What's in my camera bag?</h3>
+            <p>Less gear, more room for the good stuff.</p>
+          </article>
+          <article class="film-card" data-category="travel">
+            <button class="film-thumb js-play" type="button" data-video="ScMzIvxBSi4" data-title="A little lost in Kyoto" aria-label="Play A little lost in Kyoto">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80" alt="Traditional Kyoto street framed by spring foliage" loading="lazy">
+              <span class="play-button" aria-hidden="true">▶</span><span class="film-duration">09:01</span>
+            </button>
+            <div class="film-meta"><span>TRAVEL · JAPAN</span><span>MAR ’24</span></div>
+            <h3>A little lost in Kyoto</h3>
+            <p>Following the little red lanterns after the rain.</p>
+          </article>
+          <article class="film-card" data-category="slow-living">
+            <button class="film-thumb js-play" type="button" data-video="ScMzIvxBSi4" data-title="A room of my own" aria-label="Play A room of my own">
+              <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=1000&q=80" alt="A sunlit, welcoming cabin surrounded by trees" loading="lazy">
+              <span class="play-button" aria-hidden="true">▶</span><span class="film-duration">04:48</span>
+            </button>
+            <div class="film-meta"><span>SLOW LIVING · CABIN</span><span>FEB ’24</span></div>
+            <h3>A room of my own</h3>
+            <p>A weekend unplugged, and a reminder to keep it that way.</p>
+          </article>
+        </div>
+        <p class="empty-state" hidden>No films in this category just yet. Try another filter.</p>
+        <div class="all-films-link"><a class="button button-outline" href="#contact">More stories are on the way <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-photo">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=85" alt="A deer standing among sunlit trees in the forest" loading="lazy">
+          <span class="photo-stamp">usually<br>out there <span>✳</span></span>
+        </div>
+        <div class="about-content">
+          <p class="eyebrow">A little about the person behind the camera</p>
+          <h2 id="about-title">Not just passing <em>through.</em></h2>
+          <p class="about-copy">I’m Himanshu Gupta, a vlogger who loves sharing new places, everyday experiences, and the people I meet along the way. I bring my camera along to capture the moments that make each story feel real.</p>
+          <p class="about-copy">This is my little corner of the internet for travel diaries, behind-the-scenes moments, and the good bits in between. Thanks for being here—let’s explore together.</p>
+          <div class="about-signoff"><span>Chalo, nikalte hain.</span><span class="signature">Himanshu</span></div>
+          <div class="about-stats"><div><strong>01</strong><span>travel diaries</span></div><div><strong>02</strong><span>everyday stories</span></div><div><strong>03</strong><span>behind the scenes</span></div></div>
+        </div>
+      </section>
+
+      <section class="journal section-wrap" id="journal" aria-labelledby="journal-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Notes from along the way</p><h2 id="journal-title">The little <em>things.</em></h2></div>
+          <span class="journal-label">A journal, not a highlight reel.</span>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card">
+            <a href="#contact" class="journal-image"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=80" alt="Golden morning light spilling across a hillside" loading="lazy"><span>FIELD NOTES</span></a>
+            <p class="journal-date">OCTOBER 08, 2024 · 4 MIN READ</p><h3><a href="#contact">On making room for the unexpected</a></h3><p>A few thoughts from the trip that didn't go to plan. Turns out those are usually the ones worth remembering.</p>
+          </article>
+          <article class="journal-card">
+            <a href="#contact" class="journal-image"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="A lone traveler walking across a vast open landscape" loading="lazy"><span>BEHIND THE SCENES</span></a>
+            <p class="journal-date">SEPTEMBER 21, 2024 · 6 MIN READ</p><h3><a href="#contact">The quiet art of traveling alone</a></h3><p>What happens when you stop narrating the journey to someone back home, and just let yourself be there?</p>
+          </article>
+          <article class="journal-card">
+            <a href="#contact" class="journal-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80" alt="A fresh cup of coffee beside a notebook" loading="lazy"><span>GOOD THINGS</span></a>
+            <p class="journal-date">AUGUST 14, 2024 · 3 MIN READ</p><h3><a href="#contact">A few things I keep coming back to</a></h3><p>Three favorite bits of kit, one very good book, and a playlist for the ride home.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div class="newsletter-mark" aria-hidden="true">✳</div>
+        <div class="newsletter-copy"><p class="eyebrow">The occasional good thing</p><h2 id="newsletter-title">A postcard for your <em>inbox.</em></h2><p>New films, field notes, and places to put on your list. No noise, just the good stuff.</p><p class="newsletter-note">Preview form — connect a mailing-list provider to collect sign-ups.</p></div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="visually-hidden" for="newsletter-email">Your email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit" aria-label="Subscribe to the newsletter">Count me in <span aria-hidden="true">↗</span></button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+        <span class="newsletter-doodle" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow">Have a good one in mind?</p><h2 id="contact-title">Let's make<br>something <em>matter.</em></h2></div>
+        <div class="contact-side"><p>Have a travel tip, a story idea, or a collaboration in mind? I’d love to hear from you. Find me on social or drop me a message.</p><a class="email-link" href="mailto:hello@himanshugupta.example">hello@himanshugupta.example <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok ↗</a></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark footer-wordmark" href="#home">HIMANSHU <span>GUPTA</span><i>.</i></a><p>Himanshu Gupta Vlogger · Stories from the journey. © <span id="current-year"></span></p><a href="#home">Back to the top ↑</a></footer>
+
+    <dialog class="video-dialog" aria-label="Video player">
+      <div class="video-dialog-inner">
+        <button class="modal-close" type="button" aria-label="Close video">×</button>
+        <div class="video-frame"></div>
+        <p class="video-title"></p>
+      </div>
+    </dialog>
+  </body>
+</html>
